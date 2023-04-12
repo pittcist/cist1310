@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+{% extends "bootstrap/base.html" %}
+{%block content%}
+ <table class="table table-striped table-bordered">
 
     {% for row in rows  %}
-    {{row["name"]}}
-    {{row["addr"]}}
-    {{row["city"]}}
-    {{row["zip"]}}
-
+    <tr>
+   <td>{{row["name"]}}</td> 
+   <td>{{row["addr"]}}</td>
+    <td>{{row["city"]}}</td>
+    <td>{{row["zip"]}}</td>
+</tr>
     {% endfor  %}
+
+</table>
+{%endblock%}
 </body>
 </html>

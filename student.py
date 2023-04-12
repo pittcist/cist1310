@@ -1,6 +1,9 @@
 from flask import Flask, url_for, redirect, render_template, request
 import sqlite3 as sql
+from flask_bootstrap import Bootstrap
+
 app = Flask(__name__)
+Bootstrap(app)
 
 @app.route("/")
 def home():
