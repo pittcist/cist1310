@@ -2,3 +2,5 @@
 ### Git Practice Project
 
 This is a test project for Git and Github.
+
+Added a new line.
